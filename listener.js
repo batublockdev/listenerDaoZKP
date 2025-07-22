@@ -11,7 +11,7 @@ const pool = new Pool({
 console.log("📡 Connecting URL:", process.env.RPC_URL);
 
 // Configs
-const provider = new ethers.JsonRpcProvider(process.env.RPC_URL);
+const provider = new ethers.providers.WebSocketProvider(process.env.RPC_URL);
 const contractAddress = '0xa8E2CBE69e098ac9D1053b07089403F94C07416D';
 
 // Replace this with your contract's ABI
